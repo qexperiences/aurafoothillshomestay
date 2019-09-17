@@ -380,6 +380,78 @@
             
 
           </div>
+         <!-- Zoho code -->
+          <!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' style='width:600px;margin:auto;'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads67041000000148116 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory67041000000148116()' accept-charset='UTF-8'>
+ <input type='text' style='display:none;' name='xnQsjsdp' value='820c769d87caec57c1bd22cf2f8d0aa25ee6005d24d8f8cd7d3667dfceaf4bc6'></input> 
+ <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
+ <input type='text' style='display:none;' name='xmIwtLD' value='6abd4f040ea954fb73df73b457b51df9a93d9dab4b0bfafc239ba9cf8c979e5c'></input> 
+ <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+ <input type='text' style='display:none;' name='returnURL' value='http://aurafoothills.com' > </input><br></br>
+	 <!-- Do not remove this code. -->
+	<style>
+		#crmWebToEntityForm tr , #crmWebToEntityForm td { 
+			padding:6px;
+			border-spacing:0px;
+			border-width:0px;
+			}
+	</style>
+	<table style='width:600px;background-color:#ffffff;background-color:white;color:black'><tr><td colspan='2' align='left' style='color:black;font-family:Arial;font-size:14px;word-break: break-word;'><strong>AURAFOOTHILLS WEBSITE</strong></td></tr> <br></br><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Name<span style='color:red;'>*</span></td><td style='width:40%;' ><input type='text' style='width:100%;box-sizing:border-box;'  maxlength='80' name='Last Name' /></td><td style='width:30%;'></td></tr><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Mobile<span style='color:red;'>*</span></td><td style='width:40%;' ><input type='text' style='width:100%;box-sizing:border-box;'  maxlength='30' name='Mobile' /></td><td style='width:30%;'></td></tr><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Email<span style='color:red;'>*</span></td><td style='width:40%;' ><input type='text' style='width:100%;box-sizing:border-box;'  maxlength='100' name='Email' /></td><td style='width:30%;'></td></tr><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Check in date<span style='color:red;'>*</span></td><td style='width:40%;' ><input type='text' style='width:100%;box-sizing:border-box;'  maxlength='20' name='LEADCF81' placeholder='MM/dd/yyyy' /></td><td style='width:30%;'></td></tr><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Total Pax<span style='color:red;'>*</span></td><td style='width:40%;' ><input type='text' style='width:100%;box-sizing:border-box;'  maxlength='16' name='LEADCF66' /></td><td style='width:30%;'></td></tr><tr><td  style='word-break: break-word;text-align:left;font-size:12px;font-family:Arial;width:30%;'>Message </td><td style='width:40%;'> <textarea name='Description' maxlength='32000' style='width:100%;'>&nbsp;</textarea></td><td style='width:30%;'></td></tr>
+
+	<tr><td colspan='2' style='text-align:center; padding-top:15px;font-size:12px;'>
+		<input style='margin-right: 5px;cursor: pointer;font-size:12px;color:black' id='formsubmit' type='submit' value='Submit' ></input> <input type='reset' name='reset' style='cursor: pointer;font-size:12px;color:black' value='Reset' ></input> </td></tr></table>
+	<script>
+ 	  var mndFileds=new Array('Last Name','Email','Mobile','LEADCF66','LEADCF81');
+ 	  var fldLangVal=new Array('Name','Email','Mobile','Total Pax','Check in date'); 
+		var name='';
+		var email='';
+
+ 	  function checkMandatory67041000000148116() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads67041000000148116'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{ 
+				 alert('Please select a file to upload.'); 
+				 fieldObj.focus(); 
+				 return false;
+				} 
+			alert(fldLangVal[i] +' cannot be empty.'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none.'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+		document.getElementById('formsubmit').disabled=true;
+	}
+</script>
+	</form>
+</div>
+          <!-- Zoho code End-->
           <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
             <div class="row">
               <div class="col-md-10 ml-auto contact-info">
