@@ -1,7 +1,7 @@
   <!DOCTYPE HTML>
   <html>
     <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148169883-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,26 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-148169883-1');
+  gtag('config', 'AW-711742720'); 	
 </script>
+	 <!--AW-711742720 Google ads coversion tracker  -->
+<!-- Event snippet for Lead from webform conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-711742720/Ai-8CNOg0asBEICqsdMC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+	    
 
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -350,7 +369,7 @@
    - It is important that you test the modified form before going live.-->
 <div id='crmWebToEntityForm' style='width:725px;margin:auto;'>
    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
-   <form action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads67041000000148116 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory67041000000148116()' accept-charset='UTF-8'>
+   <form action='https://crm.zoho.in/crm/WebToLeadForm' name=WebToLeads67041000000148116 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory67041000000148116(); return gtag_report_conversion()' accept-charset='UTF-8'>
  <input type='text' style='display:none;' name='xnQsjsdp' value='820c769d87caec57c1bd22cf2f8d0aa25ee6005d24d8f8cd7d3667dfceaf4bc6'></input> 
  <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
  <input type='text' style='display:none;' name='xmIwtLD' value='6abd4f040ea954fb73df73b457b51df9a93d9dab4b0bfafc239ba9cf8c979e5c'></input> 
@@ -409,7 +428,8 @@
 		    }
 		}
 		document.getElementById('formsubmit').disabled=true;
-	}
+	gtag_report_conversion()
+	  }
 </script>
 	</form>
 </div>
